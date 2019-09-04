@@ -12,6 +12,13 @@ defmodule WebSockex.Mixfile do
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ],
       package: package(),
       deps: deps(),
       docs: docs()
@@ -29,7 +36,8 @@ defmodule WebSockex.Mixfile do
     [
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
       {:cowboy, "~> 1.0.0", only: :test},
-      {:plug, "~> 1.0", only: :test}
+      {:plug, "~> 1.0", only: :test},
+      {:excoveralls, "~> 0.11.2", only: :test}
     ]
   end
 
