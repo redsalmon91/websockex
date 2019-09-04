@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Azolo/websockex.svg?branch=master)](https://travis-ci.org/Azolo/websockex)
 [![Build status](https://ci.appveyor.com/api/projects/status/jtat5j0vkh6o2ypy?svg=true)](https://ci.appveyor.com/project/Azolo/websockex)
+[![Coverage Status](https://coveralls.io/repos/github/redsalmon91/websockex/badge.svg?branch=master)](https://coveralls.io/github/redsalmon91/websockex?branch=master)
 
 An Elixir Websocket Client.
 
